@@ -48,8 +48,8 @@ $products = [
                     <div class="card-body bg-light">
                         <h5 class="card-title"><?php echo $product['title']; ?></h5>
                         <p class="card-text"><?php echo $product['description']; ?></p>
-                        <p class="text-info"><strong><?php echo $product['price']; ?></strong></p>
-                        <a href="#" class="btn btn-dark text-success">Add to Cart</a>
+                        <p class="text-success"><strong><?php echo $product['price']; ?></strong></p>
+                        <a href="#" class="btn btn-dark text-primary">Add to Cart</a>
                     </div>
                 </div>
             </div>
