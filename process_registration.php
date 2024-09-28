@@ -16,7 +16,7 @@
 
     <div class = "container mt-5">
         <div class = "row justify-content-center">
-            <div class = "col-sm-6">
+            <div class = "col-sm-4">
                 <div class="alert alert-primary" role="alert">
                     Your Username : <?php echo"$name"?>
                 </div>

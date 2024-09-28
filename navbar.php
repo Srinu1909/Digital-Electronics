@@ -52,7 +52,7 @@
             
 
             <li class="nav-item">
-                <a class="nav-link text-primary" href="services.php">Services</a>
+                <a class="nav-link text-primary" href="product.php">Products</a>
             </li>
             &nbsp;
             &nbsp;
