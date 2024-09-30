@@ -15,15 +15,13 @@
         <div class="carousel-item">
             <img src="img/electronics2.jpg" class="d-block w-100" alt="Slide 2">
             <div class="carousel-caption d-none d-md-block">
-                <h5>Second Slide</h5>
-                <p>Description for the second slide.</p>
+                
             </div>
         </div>
         <div class="carousel-item">
-            <img src="https://via.placeholder.com/800x400?text=Slide+3" class="d-block w-100" alt="Slide 3">
+            <img src="img/electronics3.jpg" class="d-block w-100" alt="Slide 3">
             <div class="carousel-caption d-none d-md-block">
-                <h5>Third Slide</h5>
-                <p>Description for the third slide.</p>
+
             </div>
         </div>
     </div>
