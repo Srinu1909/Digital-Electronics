@@ -1,43 +1,89 @@
+<?php
+session_start();
+$error = '';
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    // Check if the user exists and verify password
+    if (isset($_SESSION['users'][$username]) && password_verify($password, $_SESSION['users'][$username])) {
+        $_SESSION['loggedin'] = true;
+        $_SESSION['username'] = $username;
+        header('Location: index2.php'); 
+        exit;
+    } else {
+        $error = "Invalid username or password.";
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carousel - Your Website</title>
+    <title>Login</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
+    {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
         }
-        .carousel-item img {
-            width: 100%;
-            height: 500px;
+        .login-container {
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            max-width: 400px;
+            margin: auto;
+            margin-top: 100px;
         }
-      
+        .form-control {
+            background-color: black;
+            border: none;
+            border-bottom: 2px solid #fff;
+            color: white;
+        }
+        .form-control:focus {
+            background-color: rgba(255, 255, 255, 0.3);
+            border-color: #fff;
+            box-shadow: none;
+        }
+        .btn-primary {
+            background-color: #6a11cb;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #2575fc;
+        }
+        .register-link {
+            color: #fff;
+        }
     </style>
 </head>
 <body>
-<?php 
- include "navbar.php";	
-?>
 
-<?php include "carousel.php";?>
+   
+    <div class="login-container">
+    <h2 class="text-center text-success">DIGITAL ELECTRONICS</h2>
+    <?php if ($error): ?>
+        <div class="alert alert-danger" role="alert"><?php echo $error; ?></div>
+    <?php endif; ?>
+    <form action="index.php" method="post">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" name="password" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Login</button>
+        <p class="mt-3 text-center">Don't have an account? <a href="register.php" class="register-link">Register here</a>.</p>
+    </form>
+</div>
 
-<?php include "intro.php";?>
-    
-   <div><p class="text-white">dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</p></div>
-   <div><p class="text-white">ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</p></div>   
-  
-    <?php 
- include "footer.php";	
-?>
- 
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</div>
 </body>
 </html>

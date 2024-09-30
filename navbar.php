@@ -75,6 +75,16 @@
             <li class="nav-item">
                 <a class="nav-link text-primary" href="register.php">Register</a>
             </li>
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            
+            <li class="nav-item">
+                <a class="nav-link text-primary" href="logout.php">Logout</a>
+            </li>
         </ul>
     </div>
 </nav>
