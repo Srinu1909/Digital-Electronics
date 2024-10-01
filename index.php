@@ -26,17 +26,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <title>DIGITAL ELECTRONICS</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-    {
-            background: linear-gradient(to right, #6a11cb, #2575fc);
-            color: white;
+        body {
+            background: url('img/electronics1.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: black;
         }
         .login-container {
-            background: white;
+            background: rgba(255, 255, 255, 0.8);
             border-radius: 15px;
             padding: 40px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
             max-width: 500px;
-            
             margin: auto;
             margin-top: 100px;
         }
@@ -44,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             background-color: lightgrey;
             border: none;
             border-bottom: 2px solid #fff;
-            color: white;
+            color: black; /* Changed to black for better readability */
         }
         .form-control:focus {
             background-color: rgba(255, 255, 255, 0.3);
@@ -65,26 +65,24 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 <body>
 
-   
     <div class="login-container">
-    <h2 class="text-center text-success ">DIGITAL ELECTRONICS</h2>
-    <?php if ($error): ?>
-        <div class="alert alert-danger" role="alert"><?php echo $error; ?></div>
-    <?php endif; ?>
-    <form action="index.php" method="post">
-        <div class="form-group mt-5">
-            <label for="username">Username</label>
-            <input type="text" class="form-control" id="username" name="username" required>
-        </div>
-        <div class="form-group mt-4">
-            <label for="password">Password</label>
-            <input type="password" class="form-control" id="password" name="password" required>
-        </div>
-        <button type="submit" class="btn btn-primary btn-block mt-5">Login</button>
-        <p class="mt-3">Don't have an account? <a href="register.php" class="register-link">Register here</a>.</p>
-    </form>
-</div>
+        <h2 class="text-center text-success">DIGITAL ELECTRONICS</h2>
+        <?php if ($error): ?>
+            <div class="alert alert-danger" role="alert"><?php echo $error; ?></div>
+        <?php endif; ?>
+        <form action="index.php" method="post">
+            <div class="form-group mt-5">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" name="username" required>
+            </div>
+            <div class="form-group mt-4">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block mt-5">Login</button>
+            <p class="mt-3">Don't have an account? <a href="register.php" class="register-link">Register here</a>.</p>
+        </form>
+    </div>
 
-</div>
 </body>
 </html>
