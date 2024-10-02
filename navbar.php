@@ -10,11 +10,11 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-dark ">
+<nav class="navbar navbar-expand-lg navbar-light bg-light ">
     <a class="navbar-brand text-success mt-0" href="index2.php">
        
-        Digital Electronics
-    </a>
+    <img src="img/logis.png" height="70" width= "75" class="my-class ml-5" alt="Description of image">
+</a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -30,10 +30,17 @@
             &nbsp;
             &nbsp;
             &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item active">
-                <a class="nav-link text-primary" href="index2.php">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link text-info" href="index2.php">Home <span class="sr-only">(current)</span></a>
             </li>
             &nbsp;
             &nbsp;
@@ -49,7 +56,7 @@
             &nbsp;
             
             <li class="nav-item">
-                <a class="nav-link text-primary" href="about.php">About</a>
+                <a class="nav-link text-info" href="about.php">About</a>
             </li>
             &nbsp;
             &nbsp;
@@ -66,7 +73,7 @@
             
 
             <li class="nav-item">
-                <a class="nav-link text-primary" href="product.php">Mobiles</a>
+                <a class="nav-link text-info" href="product.php">Mobiles</a>
             </li>
             &nbsp;
             &nbsp;
@@ -82,24 +89,7 @@
             &nbsp;
             
             <li class="nav-item">
-                <a class="nav-link text-primary" href="product.php">Cameras</a>
-            </li>
-         
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            
-            <li class="nav-item">
-                <a class="nav-link text-primary" href="contact.php">Contact</a>
+                <a class="nav-link text-info" href="product.php">Cameras</a>
             </li>
             &nbsp;
             &nbsp;
@@ -115,7 +105,48 @@
             &nbsp;
             
             <li class="nav-item">
-    <a class="nav-link text-primary" style="font-size: 21px;" href="#" onclick="confirmLogout();"><i class="bi bi-person-circle"></i></a>
+                <a class="nav-link text-info" href="product.php">Television</a>
+            </li>
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            
+            <li class="nav-item">
+                <a class="nav-link text-info" href="contact.php">Contact</a>
+            </li>
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+           
+            
+            
+            <li class="nav-item">
+            <a class="nav-link text-primary mt-0" href="#" onclick="confirmLogout();" style="display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 40px; border-radius: 50%; overflow: hidden; background-color: voiletblue;">
+    <i class="bi bi-person-circle" style="font-size: 30px;"></i>
+</a>
+
+
 </li>
 
 <script>
@@ -125,6 +156,7 @@ function confirmLogout() {
     }
 }
 </script>
+
         </ul>
     </div>
 </nav>

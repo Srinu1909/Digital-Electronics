@@ -20,6 +20,8 @@
     </style>
 </head>
 <body>
+<img src="img/images.jpg" class="d-block w-100" alt="Slide 2" height="150" >
+
 <?php 
  include "navbar.php";	
 ?>

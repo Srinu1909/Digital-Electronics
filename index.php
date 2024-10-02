@@ -65,24 +65,27 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 <body>
 
-    <div class="login-container">
-        <h2 class="text-center text-success">DIGITAL ELECTRONICS</h2>
-        <?php if ($error): ?>
-            <div class="alert alert-danger" role="alert"><?php echo $error; ?></div>
-        <?php endif; ?>
-        <form action="index.php" method="post">
-            <div class="form-group mt-5">
-                <label for="username">Username</label>
-                <input type="text" class="form-control" id="username" name="username" required>
-            </div>
-            <div class="form-group mt-4">
-                <label for="password">Password</label>
-                <input type="password" class="form-control" id="password" name="password" required>
+<div class="login-container mt-5">
+    <div class="ml-5">
+<img src="img/logis.png" height="175" width= "195" class="my-class ml-5" alt="Description of image">
+    </div>
+    
+    <?php if ($error): ?>
+        <div class="alert alert-danger" role="alert"><?php echo $error; ?></div>
+    <?php endif; ?>
+    
+    <form action="index.php" method="post">
+        <div class="form-group mt-5">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" id="username" name="username" required>
+        </div>
+        <div class="form-group mt-3">
+            <label for="password">Password</label>
+            <input type="text" class="form-control" id="password" name="password" required>
             </div>
             <button type="submit" class="btn btn-primary btn-block mt-5">Login</button>
             <p class="mt-3">Don't have an account? <a href="register.php" class="register-link">Register here</a>.</p>
-        </form>
-    </div>
+    </form>
 
 </body>
 </html>
