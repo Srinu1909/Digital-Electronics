@@ -13,7 +13,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light ">
     <a class="navbar-brand text-success mt-0" href="index2.php">
        
-    <img src="img/logis.png" height="70" width= "75" class="my-class ml-5" alt="Description of image">
+    <img src="img/logic.png" height="80" width= "110" class="my-class ml-5" alt="Description of image">
 </a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,10 +33,7 @@
             &nbsp;
             &nbsp;
             &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            
+          
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item active">
@@ -73,7 +70,7 @@
             
 
             <li class="nav-item">
-                <a class="nav-link text-info" href="product.php">Mobiles</a>
+                <a class="nav-link text-info" href="mobile.php">Mobiles</a>
             </li>
             &nbsp;
             &nbsp;
@@ -89,7 +86,7 @@
             &nbsp;
             
             <li class="nav-item">
-                <a class="nav-link text-info" href="product.php">Cameras</a>
+                <a class="nav-link text-info" href="camera.php">Cameras</a>
             </li>
             &nbsp;
             &nbsp;
@@ -105,7 +102,7 @@
             &nbsp;
             
             <li class="nav-item">
-                <a class="nav-link text-info" href="product.php">Television</a>
+                <a class="nav-link text-info" href="tv.php">Television</a>
             </li>
             &nbsp;
             &nbsp;

@@ -42,7 +42,7 @@
 
 <div class="container electronics-container">
 <div style="text-align: center; margin-bottom: 20px;">
-        <img src="img/logis.png" alt="Digital Electronics" style="width: 10%; max-height: 100px; object-fit: cover; border-radius: 12px;" />
+        <img src="img/logic.png" alt="Digital Electronics" style="width: 10%; max-height: 100px; object-fit: cover; border-radius: 12px;" />
     </div>
     <h1 class="mt-4 text-primary" style="font-family: 'Dancing Script', cursive; font-size: 3rem; text-align: center; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);">
         Digital Electronics

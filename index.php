@@ -67,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <div class="login-container mt-5">
     <div class="ml-5">
-<img src="img/logis.png" height="175" width= "195" class="my-class ml-5" alt="Description of image">
+<img src="img/logic.png" height="175" width= "220" class="my-class ml-5" alt="Description of image">
     </div>
     
     <?php if ($error): ?>

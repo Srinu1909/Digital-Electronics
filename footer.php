@@ -9,7 +9,6 @@
 </head>
 <body>
 
-
     <!-- Footer -->
     <footer class="bg-light text-dark text-center text-lg-start py-4 mt-5">
         <div class="container">
@@ -28,7 +27,6 @@
                     </ul>
                 </div>
                 <div class="col-lg-4 col-md-12 mb-5">
-                    
                     <h5 class="text-primary">Follow Us</h5>
                     <a href="#" class="text-primary mr-2"><i class="fab fa-facebook-f"></i></a>
                     <a href="#" class="text-info mr-2"><i class="fab fa-twitter"></i></a>
@@ -37,6 +35,9 @@
                 </div>
             </div>
             <hr class="my-4">
+            <div class="text-center mb-3">
+                <img src="img/qr.png" alt="QR Code" style="width: 150px; height: 150px;">
+            </div>
             <div class="text-center">
                 <p>&copy; 2024 Your Company Name. All rights reserved.</p>
             </div>

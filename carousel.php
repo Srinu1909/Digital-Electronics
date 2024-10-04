@@ -6,7 +6,7 @@
     </ol>
     <div class="carousel-inner">
     <div class="carousel-item active">
-    <img src="img/ELECTRNICESS.JPG" class="d-block w-100" style="height: 480px;" alt="Slide 1">
+    <img src="img/electronics3.JPG" class="d-block w-100" style="height: 480px;" alt="Slide 1">
     <div class="carousel-caption d-none d-md-block ">
         <h5 class="text-success " style="font-size: 35px;">DIGITAL ELECTRONICS</h5>
         <p class="text-primary">One of the trusted and high-quality electronics brand centers in Mumbai.</p>
@@ -24,7 +24,7 @@
             </div>
         </div>
         <div class="carousel-item">
-            <img src="img/electronics3.jpg" class="d-block w-100" style="height: 480px; alt="Slide 3">
+            <img src="img/electronics7.jpg" class="d-block w-100" style="height: 480px; alt="Slide 3">
             <div class="carousel-caption d-none d-md-block">
 
             </div>
