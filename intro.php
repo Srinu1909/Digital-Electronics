@@ -34,16 +34,33 @@
         .nav-link:hover {
             text-decoration: underline; /* Underline on hover */
         }
+    
+        .image-container {
+    position: relative; /* Necessary for positioning the sliding effect */
+    overflow: hidden; /* Hide any overflow */
+}
 
-       
+.styled-image {
+    width: 10%;
+    max-height: 100px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.image-container:hover .styled-image {
+    transform: translateX(10px); /* Slide to the right by 10px */
+}
+
     </style>
 </head>
 <body>
 
 <div class="container electronics-container">
-<div style="text-align: center; margin-bottom: 20px;">
-        <img src="img/logic.png" alt="Digital Electronics" style="width: 10%; max-height: 100px; object-fit: cover; border-radius: 12px;" />
-    </div>
+<div class="image-container" style="text-align: center; margin-bottom: 20px;">
+    <img src="img/logic.png" alt="Digital Electronics" class="styled-image" />
+</div>
+
     <h1 class="mt-4 text-primary" style="font-family: 'Dancing Script', cursive; font-size: 3rem; text-align: center; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);">
         Digital Electronics
 </h1>

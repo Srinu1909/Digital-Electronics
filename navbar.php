@@ -7,15 +7,21 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <title>Navbar with Logo</title>
+    <style>
+        .logo-img {
+            transition: transform 0.2s ease;
+        }
+        .logo-img:active {
+            transform: scale(0.95);
+        }
+    </style>
 </head>
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-    <a class="navbar-brand text-success mt-0" href="index2.php">
-       
-    <img src="img/logic.png" height="80" width= "110" class="my-class ml-5" alt="Description of image">
-</a>
-
+<a class="navbar-brand text-success mt-0" href="index2.php">
+        <img src="img/logic.png" height="80" width="110" class="logo-img ml-5" alt="Description of image">
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>

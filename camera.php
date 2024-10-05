@@ -18,19 +18,19 @@ $products = [
     [
         "title" => "Nikon Camera",
         "description" => "A high-quality camera for photography with latest Nikon technology.",
-        "price" => "$19.99",
+        "price" => "$919.99",
         "image" => "img/nikon.png" // Replace with actual image URL
     ],
     [
         "title" => "Canon EOS Camera",
         "description" => "Capture stunning images with the latest Canon technology.",
-        "price" => "$29.99",
+        "price" => "$829.99",
         "image" => "img/canon.png" // Replace with actual image URL
     ],
     [
         "title" => "Sony Alpha Camera",
         "description" => "A mirrorless camera with excellent low-light performance.",
-        "price" => "$39.99",
+        "price" => "$939.99",
         "image" => "img/sony.png" // Replace with actual image URL
     ],
 ];

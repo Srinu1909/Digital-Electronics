@@ -21,7 +21,7 @@
 </head>
 <body>
     <a href="tv.php">
-<img src="img/images.jpg" class="d-block w-100" alt="Slide 2" height="186"></a>
+<img src="img/images.jpg" class="d-block w-100" alt="Slide 2" height="180"></a>
 
 <?php 
  include "navbar.php";	

@@ -15,15 +15,15 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4 text-dark">
                     <h5 class="text-primary">About Us</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor.</p>
+                    <p>Welcome to our website! We are dedicated to providing you with the best service possible. Our team is made up of experienced professionals who are passionate about what they do.</p>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <h5 class="text-primary">Quick Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-dark">Home</a></li>
-                        <li><a href="#" class="text-dark">Services</a></li>
-                        <li><a href="#" class="text-dark">About</a></li>
-                        <li><a href="#" class="text-dark">Contact</a></li>
+                        <li><a href="index2.php" class="text-dark">Home</a></li>
+                        <li><a href="about.php" class="text-dark">About</a></li>
+                        <li><a href="about.php" class="text-dark">Services</a></li>
+                        <li><a href="contact.php" class="text-dark">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 col-md-12 mb-5">
