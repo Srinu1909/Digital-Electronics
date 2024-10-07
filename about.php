@@ -10,9 +10,9 @@
     <style>
         /* General body styling */
         body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            background-color: #f8f9fa; /* Light background color */
+            background: url('img/electronics1.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: black;
         }
 
         .container {

@@ -12,7 +12,7 @@
         <p class="text-primary">One of the trusted and high-quality electronics brand centers in Mumbai.</p>
         
         <!-- Buttons -->
-        <a href="about.php" class="btn btn-dark text-primary mr-2">About Us</a>
+        <a href="offers.php" class="btn btn-dark text-warning mr-2">OUR LATEST OFFERS !!!</a>
         
     </div>
 </div>

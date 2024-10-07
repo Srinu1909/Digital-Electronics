@@ -6,16 +6,23 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
+    // Dummy user data for demonstration purposes (replace with your database logic)
+    $dummy_users = [
+        'testuser' => password_hash('password123', PASSWORD_DEFAULT), // Example user
+    ];
+
     // Check if the user exists and verify password
-    if (isset($_SESSION['users'][$username]) && password_verify($password, $_SESSION['users'][$username])) {
+    if (isset($dummy_users[$username]) && password_verify($password, $dummy_users[$username])) {
         $_SESSION['loggedin'] = true;
         $_SESSION['username'] = $username;
+        $_SESSION['profile_picture'] = 'img/default_profile.png'; // Default profile picture
         header('Location: index2.php'); 
         exit;
     } else {
         $error = "Invalid username or password.";
     }
 }
+
 ?>
 
 <!DOCTYPE html>

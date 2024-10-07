@@ -24,6 +24,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="css/style.css" />
     <style>
         body {
+            background: url('img/electronics1.jpg') no-repeat center center fixed;
+            background-size: cover;
+           
             background-color: #f8f9fa;
             font-family: Arial, sans-serif;
         }

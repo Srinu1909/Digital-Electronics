@@ -5,8 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Camera Products</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
- 
+    <style>
+        .card-img-top {
+            width: 100%;
+            height: 300px; /* Fixed height */
+            object-fit: cover; /* Maintain aspect ratio */
+        }
+        .card {
+            transition: transform 0.2s; /* Animation for card hover */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+        }
+        .card:hover {
+            transform: scale(1.05); /* Slightly enlarge card on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+        }
+        .text-danger {
+            font-weight: bold;
+        }
+    </style>
 </head>
+
 <body>
 
 <?php 
@@ -36,9 +54,9 @@ $products = [
 ];
 ?>
 
-<div class="container mt-4">
-    <h1 class="text-center text-primary mb-4">Camera Products</h1>
-    <div class="row mt-4">
+<div class="container mt-5">
+    <h1 class="text-center text-primary mb-4"><i>CAMERA PRODUCTS</i></h1>
+    <div class="row mt-5">
         <?php foreach ($products as $product): ?>
             <div class="col-md-4">
                 <div class="card mb-4 shadow-sm">

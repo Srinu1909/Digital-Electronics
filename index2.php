@@ -21,7 +21,7 @@
 </head>
 <body>
     <a href="tv.php">
-<img src="img/images.jpg" class="d-block w-100" alt="Slide 2" height="180"></a>
+<img src="img/images.jpg" class="d-block w-100" alt="Slide 2" height="200"></a>
 
 <?php 
  include "navbar.php";	
@@ -30,10 +30,7 @@
 <?php include "carousel.php";?>
 
 <?php include "intro.php";?>
-    
-   <div><p class="text-white">dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</p></div>
-   <div><p class="text-white">ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</p></div>   
-  
+ 
     <?php 
  include "footer.php";	
 ?>
