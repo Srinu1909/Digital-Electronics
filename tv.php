@@ -61,10 +61,12 @@ $products = [
                 <div class="card mb-4 shadow-sm">
                     <img src="<?php echo $product['image']; ?>" class="card-img-top" alt="<?php echo $product['title']; ?>">
                     <div class="card-body bg-light">
-                        <h5 class="card-title"><?php echo $product['title']; ?></h5>
-                        <p class="card-text"><?php echo $product['description']; ?></p>
-                        <p class="text-success"><strong><?php echo $product['price']; ?></strong></p>
-                        <a href="#" class="btn btn-dark">Add to Cart</a>
+                        <h5 class="card-title text-center"><?php echo $product['title']; ?></h5>
+                        <p class="card-text text-center"><?php echo $product['description']; ?></p>
+                        <p class="text-success text-center"><strong><?php echo $product['price']; ?></strong></p>
+                        <div class="text-center">
+        <a href="#" class="btn btn-dark">Add to Cart</a>
+    </div>
                     </div>
                 </div>
             </div>

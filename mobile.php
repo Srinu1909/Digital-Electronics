@@ -67,12 +67,14 @@ $products = [
                 <div class="card mb-4 shadow-sm">
                     <img src="<?php echo htmlspecialchars($product['image']); ?>" class="card-img-top" alt="<?php echo htmlspecialchars($product['title']); ?>">
                     <div class="card-body bg-light">
-                        <h5 class="card-title"><?php echo htmlspecialchars($product['title']); ?></h5>
-                        <p class="card-text"><?php echo htmlspecialchars($product['description']); ?></p>
-                        <p class="text-success"><strong><?php echo htmlspecialchars($product['price']); ?></strong></p>
+                        <h5 class="card-title text-center"><?php echo htmlspecialchars($product['title']); ?></h5>
+                        <p class="card-text text-center"><?php echo htmlspecialchars($product['description']); ?></p>
+                        <p class="text-success text-center"><strong><?php echo htmlspecialchars($product['price']); ?></strong></p>
                         <form method="POST" action="">
                             <input type="hidden" name="product_id" value="<?php echo $product['id']; ?>">
-                            <button type="submit" class="btn btn-dark">Add to Cart</button>
+                            <div class="text-center">
+        <a href="#" class="btn btn-dark">Add to Cart</a>
+    </div>
                         </form>
                     </div>
                 </div>

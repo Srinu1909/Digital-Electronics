@@ -78,7 +78,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <?php include "navbar.php"; ?>
 
 <div class="container">
-    <h2>Contact Us</h2>
+    <h2 class="text-center text-primary">Contact Us</h2>
     
     <?php if (isset($successMessage)): ?>
         <div class="alert alert-success" role="alert">
@@ -90,8 +90,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
     <?php endif; ?>
 
-    <h3 class="text-white">Our Location</h3>
-    <div id="map" class="mt-4"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2555.0372362281637!2d55.225437135777135!3d25.089390781210206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6f98484be629%3A0x23cab1aea678ebb2!2sDigital%20Moon%20electronic%20llc!5e0!3m2!1sen!2sin!4v1728098126305!5m2!1sen!2sin" width="1000" height="380" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+  
+    <div id="map" class="mt-4"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2555.0372362281637!2d55.225437135777135!3d25.089390781210206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6f98484be629%3A0x23cab1aea678ebb2!2sDigital%20Moon%20electronic%20llc!5e0!3m2!1sen!2sin!4v1728098126305!5m2!1sen!2sin" width="1100" height="380" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
 
    
     <ul class="contact-list list-unstyled mt-3">
