@@ -22,6 +22,9 @@
 <body>
     <div class="login-container">
         <h2 class="text-center">Login</h2>
+        <?php if ($error): ?>
+            <div class="alert alert-danger" role="alert"><?php echo $error; ?></div>
+        <?php endif; ?>
         <form method="POST" action="index.php">
             <div class="form-group">
                 <label for="username">Username</label>

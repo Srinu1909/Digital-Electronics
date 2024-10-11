@@ -2,8 +2,8 @@
     <div class="container py-4">
         <div class="row">
             <div class="col-md-4 mb-4"> <!-- Added mb-4 for spacing below -->
-                <h5 class="col-sm-12 ">About Us</h5>
-                <p class="col-sm-12 ">We are dedicated to providing the best products at competitive prices. Your satisfaction is our priority.</p>
+                <h5 class="col-sm-13 ">About Us</h5>
+                <p class="col-sm-13 ">We are dedicated to providing the best products at competitive prices. Your satisfaction is our priority.</p>
             </div>
             
             <div class="col-md-4 mb-4"> <!-- Added mb-4 for spacing below -->

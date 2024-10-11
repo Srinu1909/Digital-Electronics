@@ -6,31 +6,23 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    // Dummy user data for demonstration purposes (replace with your database logic)
-    $dummy_users = [
-        'testuser' => password_hash('password123', PASSWORD_DEFAULT), // Example user
-    ];
-
-    // Check if the user exists and verify password
-    if (isset($dummy_users[$username]) && password_verify($password, $dummy_users[$username])) {
+    // Check if the session contains user data
+    if (isset($_SESSION['users'][$username]) && password_verify($password, $_SESSION['users'][$username])) {
         $_SESSION['loggedin'] = true;
         $_SESSION['username'] = $username;
-        $_SESSION['profile_picture'] = 'img/default_profile.png'; // Default profile picture
-        header('Location: index2.php'); 
+        header('Location: index.php'); // Redirect to a logged-in page
         exit;
     } else {
         $error = "Invalid username or password.";
     }
 }
-
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DIGITAL ELECTRONICS</title>
+    <title>Login</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
@@ -51,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             background-color: lightgrey;
             border: none;
             border-bottom: 2px solid #fff;
-            color: black; /* Changed to black for better readability */
+            color: black;
         }
         .form-control:focus {
             background-color: rgba(255, 255, 255, 0.3);
@@ -71,7 +63,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     </style>
 </head>
 <body>
-
 <div class="login-container mt-5">
     <div class="ml-5">
 <img src="img/logic.png" height="175" width= "220" class="my-class ml-5" alt="Description of image">
@@ -81,18 +72,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <div class="alert alert-danger" role="alert"><?php echo $error; ?></div>
     <?php endif; ?>
     
-    <form action="index.php" method="post">
+    <form action="index2.php" method="post">
         <div class="form-group mt-5">
             <label for="username">Username</label>
             <input type="text" class="form-control" id="username" name="username" required>
         </div>
         <div class="form-group mt-3">
             <label for="password">Password</label>
-            <input type="text" class="form-control" id="password" name="password" required>
+            <input type="password" class="form-control" id="password" name="password" required>
             </div>
             <button type="submit" class="btn btn-primary btn-block mt-5">Login</button>
             <p class="mt-3">Don't have an account? <a href="register.php" class="register-link">Register here</a>.</p>
     </form>
+  
 
 </body>
 </html>

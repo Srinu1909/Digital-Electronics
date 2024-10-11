@@ -77,7 +77,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
 <?php include "navbar.php"; ?>
 
-<div class="container">
+<div class="container mb-5">
     <h2 class="text-center text-primary">Contact Us</h2>
     
     <?php if (isset($successMessage)): ?>
@@ -91,7 +91,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <?php endif; ?>
 
   
-    <div id="map" class="mt-4"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2555.0372362281637!2d55.225437135777135!3d25.089390781210206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6f98484be629%3A0x23cab1aea678ebb2!2sDigital%20Moon%20electronic%20llc!5e0!3m2!1sen!2sin!4v1728098126305!5m2!1sen!2sin" width="1100" height="380" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d4290.881429288263!2d51.49626945263306!3d25.2643004384268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sdigital%20%20electronics%20doha%20%20qatar!5e0!3m2!1sen!2sin!4v1728638709917!5m2!1sen!2sin" width="1110" height="450" class="mt-3" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
    
     <ul class="contact-list list-unstyled mt-3">
