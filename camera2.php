@@ -28,7 +28,7 @@
 <body>
 
 <?php 
-include "navbar.php";	
+include "navbar2.php";	
 ?>
 
 <?php
@@ -69,10 +69,9 @@ $products = [
                         <p class="card-text text-center"><?php echo $product['description']; ?></p>
                         <p class="text-success text-center"><strong>$<?php echo number_format($product['price'], 2); ?></strong></p>
                         <div class="text-center">
-                            <form method="POST" action="addtocart.php">
-                                <input type="hidden" name="product" value="<?php echo $product['key']; ?>">
+                            <a href="index.php">
                                 <button type="submit" class="btn btn-dark">Add to Cart</button>
-                            </form>
+        </a>
                         </div>
                     </div>
                 </div>

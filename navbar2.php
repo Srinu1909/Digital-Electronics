@@ -45,7 +45,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item active">
-                <a class="nav-link text-info" href="index2.php">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link text-info" href="index3.php">Home <span class="sr-only">(current)</span></a>
             </li>
             &nbsp;
             &nbsp;
@@ -61,7 +61,7 @@
             &nbsp;
             &nbsp;
             <li class="nav-item">
-                <a class="nav-link text-info" href="about.php">About</a>
+                <a class="nav-link text-info" href="about2.php">About</a>
             </li>
             &nbsp;
             &nbsp;
@@ -77,7 +77,7 @@
             &nbsp;
             &nbsp;
             <li class="nav-item">
-                <a class="nav-link text-info" href="mobile.php">Mobiles</a>
+                <a class="nav-link text-info" href="mobile2.php">Mobiles</a>
             </li>
             &nbsp;
             &nbsp;
@@ -93,7 +93,7 @@
             &nbsp;
             &nbsp;
             <li class="nav-item">
-                <a class="nav-link text-info" href="camera.php">Cameras</a>
+                <a class="nav-link text-info" href="camera2.php">Cameras</a>
             </li>
             &nbsp;
             &nbsp;
@@ -109,7 +109,7 @@
             &nbsp;
             &nbsp;
             <li class="nav-item">
-                <a class="nav-link text-info" href="laptop.php">Laptops</a>
+                <a class="nav-link text-info" href="laptop2.php">Laptops</a>
             </li>
             &nbsp;
             &nbsp;
@@ -125,7 +125,7 @@
             &nbsp;
             &nbsp;
             <li class="nav-item">
-                <a class="nav-link text-info" href="tv.php">Television</a>
+                <a class="nav-link text-info" href="tv2.php">Television</a>
             </li>
             &nbsp;
             &nbsp;
@@ -142,7 +142,7 @@
             &nbsp; 
             
             <li class="nav-item">
-                <a class="nav-link text-info" href="contact.php">Contact</a>
+                <a class="nav-link text-info" href="contact2.php">Contact</a>
             </li>
         </ul>
         &nbsp;
@@ -157,20 +157,9 @@
             &nbsp;
            
             <div class="ml-auto">
-    <a href="#" class="nav-link text-info" onclick="confirmLogout(event)">
-        <i class="bi bi-person-circle" style="font-size: 30px;"></i>
-    </a>
-</div>
-
-<script>
-    function confirmLogout(event) {
-        event.preventDefault(); // Prevent the default action
-        if (confirm("Are you sure you want to logout?")) {
-            window.location.href = "logout.php"; // Redirect to logout.php if confirmed
-        }
-    }
-</script>
-
+            <a href="index.php" class="btn btn-outline-success ml-2">Login</a>
+            <a href="register.php" class="btn btn-outline-primary ml-2">Register</a>
+        </div>
         </div>
    
     </div>
