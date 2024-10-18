@@ -122,7 +122,7 @@
     <div class="section corner-box bg-dark">
         <div class="content">
             <h2 class="text-primary text-center section-title">Our History</h2>
-            <p class="text-success">Founded in 2020, we have grown from a small startup to a leading provider in our industry. Our commitment to excellence has been recognized by numerous awards and certifications.</p>
+            <p class="text-success">Founded in 2009, we have grown from a small startup to a leading provider in our industry. Our commitment to excellence has been recognized by numerous awards and certifications.</p>
         </div>
     </div>
 

@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="css/style.css" />
     <style>
         body {
-            background: url('img/electronics1.jpg') no-repeat center center fixed;
+            background: url('img/bg.jpg') no-repeat center center fixed;
             background-size: cover;
            
             background-color: #f8f9fa;
@@ -32,15 +32,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         .container {
+            background: url('img/bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+           
             margin-top: 30px;
-            background: white;
+            
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
         h2, h3, h4 {
-            color: #343a40;
+            color: white;
         }
 
         #map {
@@ -56,7 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         .contact-list i {
-            color: #007bff;
+            color: white;
             margin-right: 10px;
         }
 
@@ -72,13 +75,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         .alert {
             margin-bottom: 20px;
         }
+        .map-container {
+            overflow: hidden;
+            border-radius: 20px; /* Adjust for curve */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Optional shadow */
+            margin-top: 20px; /* Add spacing if needed */
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 450px; /* Fixed height */
+            border: 0; /* Remove iframe border */
+            border-radius: 20px; /* Match the container's border radius */
+        }
     </style>
 </head>
 <body>
 <?php include "navbar.php"; ?>
 
 <div class="container mb-5">
-    <h2 class="text-center text-primary">Contact Us</h2>
+    <h2 class="text-center text-light">Contact Us</h2>
     
     <?php if (isset($successMessage)): ?>
         <div class="alert alert-success" role="alert">
@@ -90,23 +106,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
     <?php endif; ?>
 
-  
-    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d4290.881429288263!2d51.49626945263306!3d25.2643004384268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sdigital%20%20electronics%20doha%20%20qatar!5e0!3m2!1sen!2sin!4v1728638709917!5m2!1sen!2sin" width="1110" height="450" class="mt-3" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d4290.881429288263!2d51.49626945263306!3d25.2643004384268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sdigital%20%20electronics%20doha%20%20qatar!5e0!3m2!1sen!2sin!4v1728638709917!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    
+        <ul class="contact-list list-unstyled mt-3" style="color: white;">
+    <li>
+        <i class="fa fa-map-marker"></i> 123 Your Street, City, State, ZIP
+    </li>
+    <li>
+        <i class="fa fa-envelope"></i> 
+        <a href="mailto:yourmail@gmail.com" style="color: white;">srinivaspatel-cmpn@atharvacoe.ac.in</a>
+    </li>
+    <li>
+        <i class="fa fa-phone"></i> 9326344481
+    </li>
+</ul>
 
-   
-    <ul class="contact-list list-unstyled mt-3">
-        <li>
-            <i class="fa fa-map-marker"></i> 123 Your Street, City, State, ZIP
-        </li>
-        <li>
-            <i class="fa fa-envelope"></i> 
-            <a href="mailto:yourmail@gmail.com">srinivaspatel-cmpn@atharvacoe.ac.in</a>
-        </li>
-        <li>
-            <i class="fa fa-phone"></i> 9326344481
-        </li>
-    </ul>
-  
     <h4>Drop a Message</h4>
     <form class="form-horizontal" method="post" action="contact.php">
         <div class="form-group">
